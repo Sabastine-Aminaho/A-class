@@ -1,0 +1,54 @@
+@use 'sass:math';
+
+* {
+  // background-color: $black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.showcase {
+  background-image: url(../photo/pic8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding: 70px;
+  width: 100%;
+  position: relative;
+  .showcase-content {
+    width: 60%;
+    position: relative;
+  }
+
+  .showcase-detail-content {
+    width: 60%;
+    position: relative;
+  }
+}
+
+main .example-writeup {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 760px) {
+  .showcase {
+    width: 100%;
+    position: relative;
+    .showcase-content {
+      width: 100%;
+      position: relative;
+    }
+  
+    .showcase-detail-content {
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+}
+
+main .service-product2{
+  display: flex;
+  flex-direction: row-reverse;
+}
